@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#949494"/>
+            <solid android:color="#FF9D00"/>
             <corners android:radius="15dp" /> <!--nupu nurga raadius-->
         </shape>
     </item>

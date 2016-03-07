@@ -9,197 +9,241 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.calculator.intz.calculator.MainActivity">
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:layout_margin="1dp"
-        android:text="1"
-        android:id="@+id/button1"
-        android:layout_above="@+id/button4"
-        android:layout_alignParentStart="true" />
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="2"
-        android:id="@+id/button2"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_alignTop="@+id/button1"
-        android:layout_toEndOf="@+id/button1" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button4"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/rounded_btn"
+            android:text="1"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="3"
-        android:id="@+id/button3"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toEndOf="@+id/button8" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button1"
+            android:background="@drawable/rounded_btn"
+            android:text="2"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:layout_margin="1dp"
-        android:text="4"
-        android:id="@+id/button4"
-        android:layout_above="@+id/button7"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button8"
+            android:background="@drawable/rounded_btn"
+            android:text="3"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="5"
-        android:id="@+id/button5"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toEndOf="@+id/button4" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button7"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/rounded_btn"
+            android:text="4"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="6"
-        android:id="@+id/button6"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/button5"
-        android:layout_alignTop="@+id/button5" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button4"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button4"
+            android:background="@drawable/rounded_btn"
+            android:text="5"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:layout_margin="1dp"
-        android:text="7"
-        android:id="@+id/button7"
-        android:layout_above="@+id/button0"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button5"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button5"
+            android:background="@drawable/rounded_btn"
+            android:text="6"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="8"
-        android:id="@+id/button8"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/button7"
-        android:layout_alignTop="@+id/button7" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button0"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/rounded_btn"
+            android:text="7"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="9"
-        android:id="@+id/button9"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/button8"
-        android:layout_alignTop="@+id/button8" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button7"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button7"
+            android:background="@drawable/rounded_btn"
+            android:text="8"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:layout_margin="1dp"
-        android:text="0"
-        android:id="@+id/button0"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button8"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button8"
+            android:background="@drawable/rounded_btn"
+            android:text="9"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="."
-        android:id="@+id/buttonDot"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/button0"
-        android:layout_alignTop="@+id/button0" />
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:background="@drawable/rounded_btn"
+            android:text="0"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="="
-        android:id="@+id/buttonEquals"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/buttonDot"
-        android:layout_alignTop="@+id/buttonDot" />
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button0"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button0"
+            android:background="@drawable/rounded_btn"
+            android:text="."
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="+"
-        android:id="@+id/buttonPlus"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/button3"
-        android:layout_alignTop="@+id/button3" />
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/buttonDot"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/buttonDot"
+            android:background="@drawable/rounded_btn_blue"
+            android:text="="
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="-"
-        android:id="@+id/buttonMinus"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_alignTop="@+id/button6"
-        android:layout_toEndOf="@+id/button6" />
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button3"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button3"
+            android:background="@drawable/rounded_btn"
+            android:text="+"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="*"
-        android:id="@+id/buttonMultiply"
-        android:layout_alignTop="@+id/button9"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/buttonEquals" />
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button6"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/button6"
+            android:background="@drawable/rounded_btn"
+            android:text="-"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/rounded_btn"
-        android:text="/"
-        android:id="@+id/buttonDivide"
-        android:layout_alignTop="@+id/buttonEquals"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_toEndOf="@+id/buttonEquals" />
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button9"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/buttonEquals"
+            android:background="@drawable/rounded_btn"
+            android:text="*"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/button1"
-        android:layout_alignEnd="@+id/buttonC" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/buttonC"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button1"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_btn"
-        android:text="C"
-        android:id="@+id/buttonC"
-        android:layout_alignTop="@+id/buttonPlus"
-        android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/buttonDivide"
-        android:layout_toEndOf="@+id/buttonDivide" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonEquals"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/buttonEquals"
+            android:background="@drawable/rounded_btn"
+            android:text="/"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/rounded_btn_orange"
+            android:text="C"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="100%" />
+
+    </android.support.percent.PercentRelativeLayout>
 </RelativeLayout>
